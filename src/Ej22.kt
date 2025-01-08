@@ -1,3 +1,5 @@
+import kotlin.system.exitProcess
+
 /*
 Ejercicio 1.2.22¶
 Escribir un programa que pida al usuario que introduzca una frase en la consola y una vocal, y después muestre por pantalla la misma frase
@@ -12,19 +14,22 @@ fun pedirfrase(msj:String): String {
 
 fun pedirvocal(msj:String): String {
     println(" $msj")
-    val frase = readln()
+    val vocal = readln()
     try {
-        if (frase != "a, e, i, o, u") {
+        if (vocal.lowercase() in listOf("a", "e", "i", "o", "u")) {
+            println("La respuesta coincide con las vocales.")
 
-        }
+        } else {println("La respuesta no coincide con una vocal.")}
     }
     catch (e: Exception) {
         println("Error: $e")
+
     }
-    return frase.uppercase()
+    return vocal.uppercase()
 }
 
 fun main() {
-    pedirfrase("Dime una frase: ")
-    pedirvocal("Dime una vocal: ")
+    val frase = pedirfrase("Dime una frase: ")
+    val vocal = pedirvocal("Dime una vocal: ")
+    println("$frase" + "$vocal")
 }
