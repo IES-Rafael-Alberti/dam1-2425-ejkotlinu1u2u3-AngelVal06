@@ -22,6 +22,18 @@ fun pedirnumero(msj:String): Double {
     }
 }
 
+fun preciocent(precio: Double): Double {
+    return precio * 100
+}
+
 fun main() {
-    val precio = pedirnumero("Dime el precio del producto: ")
+    try {
+        println("Dime el nombre del producto")
+        val nombre = readLine()
+        val precio = pedirnumero("Dime el precio del producto: ")
+        val precioEnCentimos = preciocent(precio)
+        println("El precio en centimos es: $precioEnCentimos centimos")
+    } catch (e: Exception) {
+        println("El programa finalizó debido a un error.")
+    }
 }
