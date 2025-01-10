@@ -1,3 +1,12 @@
+package com.DAM1.ejerciciosBasicos
+
+object Ej25 {
+    fun ejecutar() {
+        println("Ejecutando Ej25.kt en Unidad1")
+    }
+}
+
+
 /*
 Ejercicio 1.2.25
 Escribir un programa que pregunte al usuario la fecha de su nacimiento en formato dd/mm/aaaa y muestra por pantalla,

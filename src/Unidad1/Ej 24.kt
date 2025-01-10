@@ -1,3 +1,12 @@
+package com.DAM1.ejerciciosBasicos
+
+object Ej24 {
+    fun ejecutar() {
+        println("Ejecutando Ej24.kt en Unidad1")
+    }
+}
+
+
 /*
 Ejercicio 1.2.24
 Escribir un programa que pregunte por consola el precio de un producto en euros con dos decimales y

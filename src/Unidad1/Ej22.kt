@@ -1,4 +1,10 @@
-import kotlin.system.exitProcess
+package com.DAM1.ejerciciosBasicos
+
+object Ej22 {
+    fun ejecutar() {
+        println("Ejecutando Ej22.kt en Unidad1")
+    }
+}
 
 /*
 Ejercicio 1.2.22¶
